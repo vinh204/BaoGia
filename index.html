@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Báo giá</title>        
+</head>
+<body>
+    <div class="container">
+        <h1>Hỗ trợ tăng tương tác giá rẻ</h1>
+        <form id="quoteForm">
+            <label for="category">Nền tảng:</label>
+            <select id="category" onchange="updateProducts()" required>
+                <option value="" disabled selected>Chọn nền tảng</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Intagram">Intagram</option>
+                <option value="TikTok">TikTok</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Shopee">Shopee</option>
+            </select>
+            
+            <label for="product">Sản phẩm/dịch vụ:</label>
+            <select id="product" onchange="updateProductDetails()" required>
+                <option value="" disabled selected>Chọn dịch vụ</option>
+            </select>
+            
+            <label for="quantity">Số lượng:</label>
+            <input type="number" id="quantity" required>
+
+            <label for="minutes" id="minutesLabel" style="display:none;">Số phút live:</label>
+            <input type="number" id="minutes" style="display:none;" min="30" step="30"  placeholder="Nhập số phút live">
+                    
+            <label for="days" id="daysLabel" style="display:none;">Chọn số ngày:</label>
+            <select id="days" style="display:none;" required>
+                <option value="" disabled selected>Chọn số ngày</option>
+                <option value="7">7 ngày</option>
+                <option value="15">15 ngày</option>
+                <option value="30">30 ngày</option>
+                <option value="60">60 ngày</option>
+            </select>
+            
+            <label for="price">Đơn giá (VND):</label>
+            <input type="number" id="price" readonly>
+            
+            <button type="button" onclick="calculateTotal()">BÁO GIÁ NGAY</button>
+        </form>
+        <div class="spinner" id="spinner"></div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
