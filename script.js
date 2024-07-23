@@ -179,7 +179,7 @@ function calculateTotal() {
                 <p>Giảm giá: ${discountRate > 0 ? discountRate + '%' : 'Chỉ áp dụng đơn hàng có giá trị trên 200.000 VND'}</p>
                 ${discountRate > 0 ? `<p><strong>Tiết kiệm được: ${formatNumber(discountAmount)} VND</strong></p>` : ''}
                 <p><strong>Tổng giá trị: ${formatNumber(finalTotal)} VND</strong></p>
-                <a href="https://www.facebook.com/messages/t/109373811288395" class="contact-button" target="_blank">Mua dịch vụ</a>
+                <a href="https://zalo.me/0362611907" class="contact-button" target="_blank">Mua dịch vụ</a>
             `;
 
             document.getElementById('spinner').style.display = 'none';
