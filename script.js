@@ -22,7 +22,7 @@ const products = {
     ],
     TikTok: [
         { name: 'Tăng tim video', price: 30, minQuantity: 100 },
-        { name: 'Tăng theo dõi TikTok', price: 50, minQuantity: 50 },
+        { name: 'Tăng theo dõi TikTok', price: 60, minQuantity: 50 },
         { name: 'Tăng lượt xem video', price: 3, minQuantity: 1000 },
         { name: 'Tăng bình luận video', price: 250, minQuantity: 10 },
         { name: 'Tăng chia sẻ video', price: 30, minQuantity: 100 },
