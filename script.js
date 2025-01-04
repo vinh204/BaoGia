@@ -5,7 +5,7 @@ const products = {
         { name: 'Tăng chia sẻ bài viết', price: 50, minQuantity: 100 },
         { name: 'Tăng like cho bình luận', price: 45, minQuantity: 50 },
         { name: 'Tăng theo dõi trang cá nhân', price: 50, minQuantity: 100 },
-        { name: 'Tăng like, theo dõi Fanpage', price: 60, minQuantity: 100 },
+        { name: 'Tăng like, theo dõi Fanpage', price: 55, minQuantity: 100 },
         { name: 'Tăng thành viên nhóm', price: 30, minQuantity: 500 },
         { name: 'Tăng lượt xem video', price: 25, minQuantity: 500 },
         { name: 'Tăng lượt xem story', price: 20, minQuantity: 500 },
